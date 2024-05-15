@@ -1,0 +1,213 @@
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, rgba(101,0,94,0.6) 3%, rgba(60,132,206,0.6) 38%, rgba(48,238,226,0.6) 68%, rgba(255,25,25,0.6) 96%);
+  animation: gradient 10s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-big {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsl(0, 0%, 0%, 0.1);
+  padding: 5px;
+  background-color: hsl(0, 0%, 10%, 0.1);
+  margin-bottom: 16px;
+}
+
+.card-small {
+  max-width: 80%;
+  border: 1px solid hsl(0, 0%, 49%);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px hsl(0, 0%, 0%, 0.1);
+  padding: 10px;
+  background-color: hsla(0, 100%, 99%, 0.3);
+}
+
+.card-small-contents {
+  font-family: Arial;
+  font-size: 13pt;
+  color: hsl(0, 0%, 20%);
+  margin-bottom: 15px;
+}
+
+.top-container img {
+  max-width: 15%;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+.prod-name {
+  text-align: center;
+  font-size: 75px;
+  background: linear-gradient(to bottom, black, rgb(57, 57, 57),  rgb(107, 107, 107));
+  -webkit-background-clip: text; /* For webkit-based browsers */
+  background-clip: text;
+  color: transparent;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.inp-ctr {
+  margin-bottom: 25px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.text-input-container {
+  width: 80%;
+  margin-top: 15px;
+}
+
+.go-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.form-control-lg {
+  width: 100%;
+}
+
+.summary-header {
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.summary-card-small {
+  max-width: 80%;
+  max-height: 260px;
+  overflow: auto;
+  border: 1px solid hsl(0, 0%, 49%);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px hsl(0, 0%, 0%, 0.1);
+  padding: 10px;
+  background-color: hsla(0, 100%, 99%, 0.7);
+  margin-left: 25px;
+}
+
+.summary-card-small-contents {
+  font-family: Arial;
+  font-size: 12pt;
+  color: hsl(0, 0%, 20%);
+  margin-bottom: 15px;
+}
+
+.pdf-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.add-qn {
+  margin-left: 25px;
+}
+
+.ask-button {
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.spin-wheel {
+  border-color: red;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loading-container p {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+
+.summary-card-small-related {
+  max-width: 80%;
+  max-height: 120px;
+  overflow: auto;
+  border: 1px solid hsl(0, 0%, 49%);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px hsl(0, 0%, 0%, 0.1);
+  padding: 10px;
+  background-color: hsla(0, 100%, 99%, 0.7);
+  margin-left: 25px;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.9;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.9;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
