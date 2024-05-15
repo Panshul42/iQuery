@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iQuery/static/css/main.5948d2bf.css",
+    "main.js": "/iQuery/static/js/main.a983b2e8.js",
+    "index.html": "/iQuery/index.html",
+    "main.5948d2bf.css.map": "/iQuery/static/css/main.5948d2bf.css.map",
+    "main.a983b2e8.js.map": "/iQuery/static/js/main.a983b2e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5948d2bf.css",
+    "static/js/main.a983b2e8.js"
+  ]
+}
